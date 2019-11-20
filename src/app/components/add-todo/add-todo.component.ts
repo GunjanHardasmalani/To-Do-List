@@ -12,7 +12,7 @@ export class AddTodoComponent implements OnInit {
   @Output() addTodoEmit: EventEmitter<any> = new EventEmitter();
   title: string;
   description: string;
-  duedate: Date;
+  dueDate: Date;
   time: Time;
   todos: Todo[];
   constructor(private todoService: TodoServiceService) { }
@@ -24,7 +24,7 @@ export class AddTodoComponent implements OnInit {
     const todo = {
       title: this.title,
       description: this.description,
-      duedate: this.duedate,
+      dueDate: this.dueDate,
       time: this.time,
       completed: false
     };

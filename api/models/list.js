@@ -10,13 +10,7 @@ let ListSchema = new Schema({
         type: String,
         required: "Please enter the name of the task"
     },
-    /**
-     * List created date.
-     */
-    createdDate: {
-        type: Date,
-        default: Date.now
-    },
+
     /**
      * List content.
      */
