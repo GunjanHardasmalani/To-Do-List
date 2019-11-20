@@ -25,10 +25,14 @@
             "aot": false,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "./node_modules/font-awesome/scss/font-awesome.scss"
+
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "./node_modules/font-awesome/scss/font-awesome.scss"
+
             ],
             "scripts": []
           },
