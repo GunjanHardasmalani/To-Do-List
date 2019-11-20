@@ -1,0 +1,23 @@
+
+
+<form class="form" (ngSubmit)="onSubmit()">
+    <div class="inputContainer">
+        <input type="text" id="title" class="taskName" placeholder="name it" name="title" [(ngModel)]="title">
+        <label for="title">Title</label>
+    </div>
+    <div class="inputContainer">
+        <input type="text" id="description" name="description"  [(ngModel)]="description"class="taskName" placeholder="What do you need to do?" ng-model="newTask">
+        <label for="description">Description</label>
+    </div>
+
+    <div class="inputContainer half last right">
+        <input type="date" id="dueDate" class="taskDate" name ="duedate" [(ngModel)]="duedate">
+        <label for="dueDate">Due Date</label>
+    </div>
+    <div class="inputContainer half last right">
+        <input type="time" id="time" class="taskTime" name ="time" [(ngModel)]="time">
+        <label for="time">Time </label>
+    </div>
+    <input type="submit" value="submit" class="btn">
+</form>
+

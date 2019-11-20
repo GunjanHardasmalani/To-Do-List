@@ -1,0 +1,88 @@
+
+/* inputs */
+.inputContainer {
+  height: 60px;
+  border-top: 1px solid #e5e5e5;
+  position: relative;
+  overflow: hidden;
+}
+
+.inputContainer.last {
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 20px;
+}
+
+.inputContainer.half.last.right {
+  border-left: 1px solid #efefef;
+}
+
+input[type="date"], input[type="text"], select, input[type="time"] {
+  height: 100%;
+  width: 100%;
+  padding: 0 20px;
+  position: absolute;
+  top: 0;
+  vertical-align: middle;
+  display: inline-block;
+  border: none;
+  border-radius: none;
+  font-size: 13px;
+  color: #777;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  -webkit-transition: background 0.3s;
+          transition: background 0.3s;
+}
+
+input[type="date"] {
+  cursor: pointer;
+}
+
+input[type="date"]:focus, input[type="text"]:focus, select:focus  input[type="time"]:focus {
+  outline: none;
+  background: #ecf0f1;
+}
+
+::-webkit-input-placeholder {
+  color: lightgrey;
+  font-weight: normal;
+  -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+}
+::-moz-placeholder {
+  color: lightgrey;
+  font-weight: normal;
+  transition: all 0.3s;
+}
+::-ms-input-placeholder {
+  color: lightgrey;
+  font-weight: normal;
+  transition: all 0.3s;
+}
+input:-moz-placeholder {
+  color: lightgrey;
+  font-weight: normal;
+  transition: all 0.3s;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: #95a5a6;
+  font-weight: bold;
+}
+
+input:focus::-moz-input-placeholder {
+  color: #95a5a6;
+  font-weight: bold;
+}
+
+label {
+  padding: 5px 20px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #777;
+  display: block;
+  position: absolute;
+}

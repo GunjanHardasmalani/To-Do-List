@@ -20,20 +20,20 @@ let ListSchema = new Schema({
     /**
      * List content.
      */
-    content: {
+    description: {
         type: String
     },
     /**
      * Last modified date.
      */
-    modifiedDate: {
+    dueDate: {
         type: Date,
         default: Date.now
-    }
-    // status: {
-    //     type:String,
-    //     default: ""
-    //   }
+    },
+    completed: {
+       type:Boolean,
+       default: false
+       }
 },
 );
 
