@@ -12,14 +12,15 @@ export class AddComponent implements OnInit {
   constructor(private todoService: TodoServiceService) { }
   todos: Todo[];
   ngOnInit() {
-    this.todoService.getTodo().subscribe(todos =>{
+    this.todoService.getTodo().subscribe(todos => {
       this.todos = todos;
 
     });
   }
 
- addTodo(todo: Todo){
-    this.todoService.addTodo(todo).subscribe(todo => {
+ addTodo(todo: Todo) {
+   console.log('in addTodo');
+   this.todoService.addTodo(todo).subscribe(todo => {
       this.todos.push(todo);
     });
 }

@@ -26,20 +26,17 @@ button {
   height: 50px;
   width: 150px;
   font-size: 1em;
-  color: #fff;
+
   cursor: pointer;
   text-transform: uppercase;
   position: relative;
   background: #444;
   margin-left: 30px;
+  a{
+    color: #fff;
+  }
 }
 
-.icon {
-  position: absolute;
-  top: 30%;
-  left: 10px;
-  font-size: 20px;
-}
 
 button:hover {
   background: #303030;

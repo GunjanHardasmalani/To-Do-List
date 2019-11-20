@@ -9,7 +9,7 @@ import { Component, OnInit, EventEmitter, Output } from '@angular/core';
   styleUrls: ['./add-todo.component.scss']
 })
 export class AddTodoComponent implements OnInit {
-  @Output() addTodo: EventEmitter<any> = new EventEmitter();
+  @Output() addTodoEmit: EventEmitter<any> = new EventEmitter();
   title: string;
   description: string;
   duedate: Date;
@@ -29,7 +29,7 @@ export class AddTodoComponent implements OnInit {
       completed: false
     };
     console.log("on submit" +todo.title);
-    this.addTodo.emit(todo);
+    this.addTodoEmit.emit(todo);
   }
 
   addTodoItems(todo: Todo){

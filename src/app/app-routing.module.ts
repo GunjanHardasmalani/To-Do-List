@@ -3,11 +3,12 @@ import { TodosComponent } from './components/todos/todos.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { AddComponent } from './components/add/add.component';
 
 
 const routes: Routes = [
   {path: '', component: TodosComponent},
-  {path: 'add-todo', component: AddTodoComponent},
+  {path: 'add', component: AddComponent},
 ];
 
 @NgModule({

@@ -28,7 +28,10 @@ let ListSchema = new Schema({
      */
     dueDate: {
         type: Date,
-        default: Date.now
+
+    },
+    time: {
+      type:String,
     },
     completed: {
        type:Boolean,
