@@ -1,4 +1,5 @@
-<div>
-    {{ todo.title}}
-
-</div>
+<app-view
+*ngIf='todos'
+[todo] ="todos"
+>
+</app-view>

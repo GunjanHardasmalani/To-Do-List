@@ -10,7 +10,7 @@ import { AddComponent } from './components/add/add.component';
 const routes: Routes = [
   {path: '', component: TodosComponent},
   {path: 'add', component: AddComponent},
-  {path: 'view', component: ViewDetailsComponent},
+  {path: 'view/:id', component: ViewDetailsComponent},
 ];
 
 @NgModule({

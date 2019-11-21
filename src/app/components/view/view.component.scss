@@ -1,0 +1,14 @@
+.view-items{
+  display: block;
+  margin: auto;
+  width:30%;
+  p{
+    color:#333;
+    font-weight: bold;
+    text-decoration: none;
+    font-size:1.1rem;
+    font-family:'Quicksand', sans-serif;
+    border-bottom: 1px solid rgba($color: #333, $alpha: 0.2);
+    padding: 10px;
+  }
+}

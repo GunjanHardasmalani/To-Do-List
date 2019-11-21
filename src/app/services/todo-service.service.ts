@@ -38,4 +38,9 @@ export class TodoServiceService {
       const url = `${this.todoUrl}/${todo.id}`;
       return this.http.put(url, todo, httpOptions);
     }
+
+    getListById(id: string): Observable<any>{
+      const url = `${this.todoUrl}/${id}`;
+      return this.http.get<Todo[]>(url, httpOptions);
+    }
 }

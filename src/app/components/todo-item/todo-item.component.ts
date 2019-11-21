@@ -2,7 +2,7 @@ import { TodoServiceService } from './../../services/todo-service.service';
 
 import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 import { Todo } from './../../models/todo';
-
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -14,7 +14,7 @@ import { Todo } from './../../models/todo';
 export class TodoItemComponent implements OnInit {
   @Input() todo: Todo;
 @Output() deleteTodo: EventEmitter<Todo> = new EventEmitter();
-constructor(private todoService: TodoServiceService) { }
+constructor(private todoService: TodoServiceService, private router: Router) { }
 
 ngOnInit() {
 }
@@ -30,9 +30,8 @@ setClasses(){
 }
 
 onToggle(todo){
-  console.log(todo);
-  todo.completed = !todo.completed;
 
+  todo.completed = !todo.completed;
   // toggle on server
   this.todoService.toggleCompleted(todo).subscribe( todo =>{
 
@@ -40,7 +39,11 @@ onToggle(todo){
 }
 
 onDelete(todo){
-  console.log("Delete");
   this.deleteTodo.emit(todo);
+}
+
+getListById(todo){
+this.router.navigate(['/view', todo.id]);
+
 }
 }
