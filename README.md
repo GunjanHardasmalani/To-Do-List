@@ -12,8 +12,11 @@
 * Use angular component and data binding features.
 * Use SCSS for CSS.
 ## Development server
-
+Run `node server.js` on your terminal to start up Node Server
+Run `MongoD ` on your git cmd to start up Mongo Server 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+
 
 ## Build
 
